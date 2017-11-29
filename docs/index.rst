@@ -7,8 +7,8 @@
 Welcome to ckunlock!
 ========================
 
-Linux Container Creation for Gentoo
---------------------------------------
+Session Unlocking for gentoo with openrc
+----------------------------------------
 
 ``ckunlock`` is a simple frontend to ck-list-sessions and dbus-send to
 unlock a session (typically left locked after a live upgrade).
