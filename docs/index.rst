@@ -13,6 +13,11 @@ Linux Container Creation for Gentoo
 ``ckunlock`` is a simple frontend to ck-list-sessions and dbus-send to
 unlock a session (typically left locked after a live upgrade).
 
+References:
+
++ `kde bug 360489 <https://bugs.kde.org/show_bug.cgi?id=360489>`_ (Dmitry Demin)
++ `gentoo forum thread <https://forums.gentoo.org/viewtopic-t-1046566-postdays-0-postorder-asc-start-0.html>`_
+
 See :doc:`changelog` for changes in this version.
 
 .. toctree::
