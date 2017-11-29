@@ -3,9 +3,10 @@
 Script entry point.
 """
 
-import subprocess
+import sys
+from ckunlock.dbunlock import unlock_users
 
-from dbunlock import unlock_cmd
 
 def program():
-    return subprocess.call('sudo {}'.format(unlock_cmd()), shell=True)
+    """ckunlock console script entry point."""
+    return unlock_users(sys.argv[2:])
