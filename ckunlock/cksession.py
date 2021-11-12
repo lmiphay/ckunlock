@@ -11,7 +11,7 @@ import subprocess
 import sys
 
 
-class CkSession(object):
+class CkSession:
     """
     Wrapper around ck-list-sessions - provides a query for active x11 sessions by user (optional).
 
@@ -26,7 +26,7 @@ class CkSession(object):
         :param usernames: optional list of usernames to filter results by
         """
         self.session = {}
-        self.uid = set([pwd.getpwnam(user).pw_uid for user in usernames])
+        self.uid = {pwd.getpwnam(user).pw_uid for user in usernames}
 
     def list_sessions(self):
         """
@@ -49,7 +49,7 @@ class CkSession(object):
         dump a list of active sessions (list_sessions must be called before this).
         :return: a reference to self
         """
-        for key, value in self.session.iteritems():
+        for key, value in self.session.items():
             print(key, '=')
             pprint.pprint(value)
         return self

@@ -2,7 +2,7 @@
 
 
 import unittest
-import mock
+import unittest.mock as mock
 
 import ckunlock.dbunlock
 import ckunlock.cksession
